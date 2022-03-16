@@ -1,0 +1,40 @@
+:root {
+  --color-background:#F3F3F3;
+  --color-background-nav:#14ffc3;
+  --color-background-home:#c2c2bd;
+  --color-text-light:#EDEDED;
+  --color-text-title:#c955ff;
+  --color-text-dark:#3D3D3D;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  background-color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s opacity;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.container {
+  width: 90%;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+}
