@@ -1,12 +1,16 @@
 <template>
   <main>
-    <div class="text-top">Videos every week</div>
+    <div class="text-top">
+      <p class="visible">Welcome everyone
+      </p>
 
-    <a href="https://www.youtube.com/channel/UCARzMooDoBJe2gmAYSbvBRw" target="_blank">
-      <img alt="Subscribe" id="subscribe" src="https://cdn-icons-png.flaticon.com/512/4659/4659011.png">
+    </div>
+
+    <a href="https://github.com/mila-developer" target="_blank">
+      <img alt="Subscribe" id="subscribe" src="https://media.giphy.com/media/YkXEXpPfKJYohkLWId/giphy.gif" allowFullScreen>
     </a>
 
-    <div class="text-bottom">youtube.com/mila-developer</div>
+    <div class="text-bottom"></div>
   </main>
 </template>
 
@@ -26,12 +30,15 @@
 
   .text-top {
     color: var(--color-background-nav);
-    font-size: 22px;
+    font-size: 36px;
     text-shadow: black 0.1em 0.1em 0.2em;
+    margin-bottom: 20px;
+    cursor: pointer;
+    animation: bounce 1s infinite alternate;
   }
 
   #subscribe {
-    width: 300px;
+    width: 450px;
   }
 
   .text-bottom {
@@ -43,8 +50,19 @@
 
   @media (min-width: 700px) {
     #subscribe {
-      width: 370px;
+      width: 500px;
     }
+  }
+
+  @keyframes bounce {
+    from {
+    transform: translateZ(0px);
+  }
+    to {
+    transform: translateZ(-15px);
+    color: var(--color-text-title);
+    text-shadow: none;
+  }
   }
 
 </style>
